@@ -9,6 +9,8 @@
 | `plt.ylabel('Median Salary(USD)')` | y label | |
 | `plt.legend(loc='Upper Left')` | legend of the figure | loc of the legend |
 | `plt.show()` | shows the plot | Final statement |
+| `plt.xscale('log')`| X axis is log scalled| | 
+| `plt.yscale('log')`| Y axis is lof scalled |  |
 | `plt.grid(True) # This puts the grid` | Draws the grids | |
 | `plt.style.available` | Available styles | |      
 | `plt.style.use('ggplot')` | plots are drawn using this style | |
@@ -23,9 +25,14 @@
 | `plt.scatter(x , y , s = sizes , c =  colors , edgecolors='black', cmap ='Greens')` | Scatter plot | `sizes` and `colors` are all lists  |
 | `cbar = plt.colorbar(); cbar.set_label('Color Map')` | Shows the color map on the plot | |
 | `plt.plot_date(dates, y, linestyle = 'solid')` | plot dates  | |
-|`plt.gcf().autofmt_xdate()` | position the dates on x axis to look better | |
+| `plt.gcf()` | Return the current figure | |
+| `plt.gca()` | Return the current axes | |
+| `plt.gcf().autofmt_xdate()` | position the dates on x axis to look better | |
 | `date_format = mpl_dates.DateFormatter('%b, %d %Y')`| Choose a date format  |  |
-| `plt.gca().xaxis.set_major_formatter(date_format)` | Convert the dates according to that dates||
+| `plt.gca().xaxis.set_major_formatter(date_format)` | Convert the dates according to that dates| |
 | `fig, ax = plt.subplots(nrows = 2, ncols = 2, sharex = True)` | To draw differnt plots the OOP way |  |
+| `ax.set_title('Title)` | Sets the title for that axes | See the change from plt set_ is added |
+| `set_xlabel('x label')` | Sets the x label for that axes | | 
+| `set_ylabel(ylabel)`| Sets the y label for that axes | |  
 
 * To use the OOP way, replace the `plt` in all the above comands with `ax` thats it !
