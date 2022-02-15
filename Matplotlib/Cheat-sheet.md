@@ -34,5 +34,6 @@
 | `ax.set_title('Title)` | Sets the title for that axes | See the change from plt set_ is added |
 | `set_xlabel('x label')` | Sets the x label for that axes | | 
 | `set_ylabel(ylabel)`| Sets the y label for that axes | |  
+| `fig.set_size_inches(5,10)` | change the size of the plots | |
 
 * To use the OOP way, replace the `plt` in all the above comands with `ax` thats it !
